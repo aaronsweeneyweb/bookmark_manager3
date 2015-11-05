@@ -3,7 +3,14 @@
     <li>
       Title: <%= link.title %>
       URL: <%= link.url %>
-      URL: <%= link.tags %>
+    </li>
+  <% end %>
+</ul>
+
+<ul id='tags'>
+  <% @tags.each do |tag| %>
+    <li>
+      Tag: <%= tag.name %>
     </li>
   <% end %>
 </ul>
