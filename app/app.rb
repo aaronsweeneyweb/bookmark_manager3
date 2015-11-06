@@ -10,7 +10,7 @@ class BookmarkManager < Sinatra::Base
   set :session_secret, 'super secret'
 
   get '/' do
-    'Hello BookmarkManager!'
+    redirect to('links')
   end
 
   get '/links' do
