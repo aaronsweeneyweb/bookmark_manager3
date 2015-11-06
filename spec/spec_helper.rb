@@ -6,7 +6,6 @@ require 'capybara'
 require 'rspec'
 require 'capybara/rspec'
 require './app/app'
-require 'web_helpers'
 
 Capybara.app = BookmarkManager
 
